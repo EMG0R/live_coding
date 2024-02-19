@@ -1,4 +1,4 @@
-# TIDAL CYCLES ASSIGNMENT
+# MiniTidal Assignment
 
 
  I can't find a description of what this assignment is supposed to be but I assume its to turn in the patch we were working on.
