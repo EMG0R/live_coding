@@ -1,0 +1,20 @@
+d1 $ stack [
+  s (euclid 4 29 "808bd") # gain 0.8,
+  s (euclid 2 51 "sn:7") # gain 0.4,
+  s (euclid 16 38 "hh27") # gain 0.5 # speed 1.4,
+  s "808ht*5?" # gain 0.44 # pan (slow 4 $ sine),
+  s "808mc*6?" # gain 0.44 # pan (fast 1 $ sine),
+  s "808hc*7?" # gain 0.43 # pan (slow 2 $ sine),
+  s "birds3*0.9?" # gain 0.7 # pan (fast 1 $ sine),
+  s "birds2*0.8?" # gain 0.4 # pan (slow 2 $ sine),
+  s "birds*0.4?" # gain 0.34 # pan (slow 3 $ sine),
+  s "crow*0.6?" # gain 0.44 # pan (fast 4 $ sine),
+  s "xmas*82?" # grain (range 0.01 1.4 $ fast 5 $ sine) (range 0.1 4.1 $ fast 5 $ sine) # gain 0.29 # pan (fast 2.1 $ sine) # speed (range 0.85 1.2 $ fast 2 $ sine),
+  s "supergong*0.8?" <| n "c e b c g" # voice sine # decay sine # accelerate sine # gain 0.26,
+  s "superchip*0.75?" <| n "7 14 18 7 18 7 14" # slide sine # rate sine # accelerate sine # pitch2 sine# pitch3 sine # voice sine # gain 0.3 # pan (fast 2 $ sine),
+  s "superreese*0.5?" <| n "c g d a e b" # accelerate sine # voice sine # detune sine# gain 0.25 # pan (slow 2 $ sine),
+  s "supermandolin*0.4?" <| n "0 2 4 5 7 9 11 14 18" # accelerate sine # voice sine # detune sine # gain 0.35 # pan (slow 2 $ sine),
+  s "supervibe*0.5?" <| n "0 2 4 5 7 9 11 14 18" # accelerate sine # voice sine # detune sine # gain 0.3 # pan (fast 2 $ sine),
+  s "superfm*1?" <| n "[1 2 3 -3 5 6 -8 -4 -2]*0.3" # accelerate sine # voice sine # detune sine # gain 0.32 # pan (slow 1 $ sine),
+  s (euclid 5 18 "superfm") # n "[c d e f g a b]*0.9" # attack "0.3 0.2 0.1 0.4 0.2 0.3 0.1 0.4 0.2" # release "0.3 0.4 0.6 0.2 0.3 0.2 0.5 0.4 0.6" # pan (fast 2 $ sine) # gain 0.33
+  ] # room 0.2 # size 0.2 # delay 0.2 # delaytime (choose [0.25, 0.5]) # delayfeedback (range 0.2 0.4 $ fast 5 $ sine)
