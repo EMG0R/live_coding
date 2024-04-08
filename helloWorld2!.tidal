@@ -1,7 +1,7 @@
 d1 $ stack [
   s (euclid 4 29 "808bd") # gain 0.8,
-  s (euclid 2 51 "sn:7") # gain 0.4,
-  s (euclid 16 38 "hh27") # gain 0.5 # speed 1.4,
+  s (euclid 2 13 "sn:7") # gain 0.38,
+  s (euclid 16 36 "hh27") # gain 0.42 # speed 1.4,
   s "808ht*5?" # gain 0.44 # pan (slow 4 $ sine),
   s "808mc*6?" # gain 0.44 # pan (fast 1 $ sine),
   s "808hc*7?" # gain 0.43 # pan (slow 2 $ sine),
